@@ -1,3 +1,7 @@
+# shipsgz-reader
+Downloads the shipsgz file at inputted date and returns the information of a specified hex code.
+if not working, make sure that the days and months inputted have no leading zeros.
+
 # shipsgz-compressor
 Compressing and Decompressing https://pub.drednot.io/econ/prod/DAY_MONTH_YEAR/ships.json.gz\
 input filename, compressed filename, output filename are NOT specified.\
