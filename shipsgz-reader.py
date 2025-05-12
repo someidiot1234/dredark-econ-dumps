@@ -1,8 +1,6 @@
-import json, gzip, sys, urllib, urllib.error
-import urllib.request
+import json, gzip, sys, urllib, urllib.error, urllib.request
 def main():
-    print("Enter the date of the file you want:")
-    print("Format: YYYY_M_D")
+    print("Enter the date of the file you want:\nFormat: YYYY_M_D")
     date = input()
     with urllib.request.urlopen(urllib.request.Request("https://pub.drednot.io/prod/econ/"+date+"/ships.json.gz", headers={"User-Agent": "_ANY_USER"})) as response:
         file = gzip.decompress(response.read())
