@@ -7,24 +7,23 @@ if not working, make sure that the days and months inputted have no leading zero
 # shipsgz-compressor
 MD5: 9687db76128aebb1975a6e04e773caad\
 SHA256: 8ec6d0850db3ddacbd0ecf2341d84abacfbade2ab1a3104a0d2fb5405f9f407c\
-Compressing and Decompressing https://pub.drednot.io/econ/prod/DAY_MONTH_YEAR/ships.json.gz\
+Compressing and Decompressing https://pub.drednot.io/econ/prod/DAY_MONTH_YEAR/ships.json.gz \
 input filename, compressed filename, output filename are NOT specified.\
 filename function I made:\
 def getfilename(url):\
     # gets the index of "econ" in the url\
     info = url.index("econ")\
     unformatted = (url[(info)+5:])[:-5]\
-    # removes the econ part and the link before it\
-    # formats name to use underscore instead of slash\
-    unformatted = unformatted.replace("_", "-")\
+    # removes the econ part and the link before it formats the name to use underscore instead of slash\
+    unformatted = unformatted.replace("\_", "-")\
     formatted = unformatted.replace("/", "_") + ".bin"\
-    return formatted\
+    return formatted
     
 # summary downloader/compressor
 MD5: 6d7d02d2138f89f2d264f162b7f6e3a3\
 SHA256: faa534e7b8d002b023a8e36163491813c7b055d22f75ce9457919b4dc4f5a0ac\
-Downloading and Compressing https://pub.drednot.io/econ/prod/DAY_MONTH_YEAR/summary.json\
-PLEASE specify the date range you would like to download on lines 170 & 171\
+Downloading and Compressing https://pub.drednot.io/econ/prod/DAY_MONTH_YEAR/summary.json \
+PLEASE specify the date range you would like to download on lines 170 & 171
 
 # summary reader
 MD5: 0edae08638862e3530a8e0c52e157b9f\
@@ -34,41 +33,43 @@ Takes input as filename in terminal. Saves output as json.\
 Schema:\
 total_ships - 15 bit integer\
 total_logs - 31 bit integer\
-items_held - an object that stores all new items created during that day.\ 
-     Maps id (9 bit integer stored as string) to count (63 bit integer)\
-items_grabbed - same as items_held\
+items_held - an object that stores all new items created during that day.\
+Maps id (9 bit integer stored as string) to count (63 bit integer)\
+____items_grabbed - same as items_held\
 items_new - an object that stores zone, source, and id:[total, grabbed]\
-     "Zone":{"Bot":{"id":[total,grabbed]}}\
-     id is a 9 bit integer, total/grabbed are 31 bit integers\
+____"Zone":{"Bot":{"id":[total,grabbed]}}\
+____id is a 9 bit integer, total/grabbed are 31 bit integers
 
 # summary files
 MD5: b960dc16d45fb0029173acc8246e441b\
 SHA256: 2b609263d0513751580ce2c86dbe9446c9d7a7b589be8e43f7a04c604ca06855\
-A folder that contains all summary files from November 23rd 2022 to May 10th 2025\
+A folder that contains all summary files from November 23rd 2022 to May 10th 2025
 
 # networth grapher
-MD5: f637ead275de9569675488496abae23f
-SHA256: b24f285331e5a0cc127bab1f5e84814a2541ffb2bcb07daf952f1d13923246b8
+MD5: f637ead275de9569675488496abae23f\
+SHA256: b24f285331e5a0cc127bab1f5e84814a2541ffb2bcb07daf952f1d13923246b8\
 Graphs the combined networth of ships you own over a time period.\
 Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
 Make a file titled 'shiplist.json' and paste your shiplist into it.\
-Shiplist link: https://drednot.io/shiplist?server=0\
+Shiplist link: https://drednot.io/shiplist?server=0 \
+PLEASE specify the date range you would like to download on lines 67 & 68\
 Dependencies:
-shiplist.json, item_conversions.json, YYYY-MM-DD_ships.json.gz (leading zeros must be ommited).\
+shiplist.json, item_conversions.json, YYYY-MM-DD_ships.json.gz (leading zeros must be ommited).
 
 # item conversions
-MD5: c42e53ce012d482412e04f588009b378
-SHA256: 1f464330aeb7a0ff1acdbc7f34fca149990130d3467ede87a0082ed861290a69
+MD5: c42e53ce012d482412e04f588009b378\
+SHA256: 1f464330aeb7a0ff1acdbc7f34fca149990130d3467ede87a0082ed861290a69\
 A json file that maps item ids to how many of that item will be worth 16 flux (npsf).\
 The npsf column will also contain 'inf' aka 0 value for starters, and 'no value' for certain rares.\
-Required to use the networth grapher.\
+Required to use the networth grapher.
 
 # ships downloader
-MD5: 81829b888f4521106b0a6c1e3a0aa83c
-SHA256: 9d3f1863b361d44b9abd2d19e5b0178ab58aa833549f111601013e568d7ef14c
+MD5: 81829b888f4521106b0a6c1e3a0aa83c\
+SHA256: 9d3f1863b361d44b9abd2d19e5b0178ab58aa833549f111601013e568d7ef14c\
 Downloads all ships.json.gz files over a time period.\
 Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
 Can be configured to download any econ dumps file. To do this, edit the link on line 35.\
+PLEASE specify the date range you would like to download on lines 29 & 30
 
 \
 Have fun!\
