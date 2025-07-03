@@ -2,7 +2,6 @@ import urllib.request, sys, os, math, urllib.error
 from datetime import date, timedelta
 
 def getfilename(url):
-    "%Y_%m_%d_ships.json.gz"
     # gets the index of "econ" in the url
     info = url.index("econ")
     # removes the econ part and the link before it
