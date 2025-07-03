@@ -46,8 +46,8 @@ SHA256: 2b609263d0513751580ce2c86dbe9446c9d7a7b589be8e43f7a04c604ca06855\
 A folder that contains all summary files from November 23rd 2022 to May 10th 2025
 
 # networth grapher
-MD5: f637ead275de9569675488496abae23f\
-SHA256: b24f285331e5a0cc127bab1f5e84814a2541ffb2bcb07daf952f1d13923246b8\
+MD5: 9f99e1e672446683880d58d46cfb0d2b\
+SHA256: 9859c03e7bcc04bc070908b439fcb675246fe5dd0e9ddcac09dad90a124e1b67\
 Graphs the combined networth of ships you own over a time period.\
 Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
 Make a file titled 'shiplist.json' and paste your shiplist into it.\
@@ -64,11 +64,11 @@ The npsf column will also contain 'inf' aka 0 value for starters, and 'no value'
 Required to use the networth grapher.
 
 # ships downloader
-MD5: 81829b888f4521106b0a6c1e3a0aa83c\
-SHA256: 9d3f1863b361d44b9abd2d19e5b0178ab58aa833549f111601013e568d7ef14c\
+MD5: 456803aa91cb4b4ce733d3474ef98095\
+SHA256: 3d96681f64b5bed3becea10af0ab4b01f9212bef58c49dcce8c586c34a522ec6\
 Downloads all ships.json.gz files over a time period.\
 Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
-Can be configured to download any econ dumps file. To do this, edit the link on line 35.\
+Can be configured to download any econ dumps file. To do this, edit the link on line 34.\
 PLEASE specify the date range you would like to download on lines 29 & 30
 
 \
