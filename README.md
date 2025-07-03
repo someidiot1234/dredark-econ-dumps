@@ -45,5 +45,24 @@ items_new - an object that stores zone, source, and id:[total, grabbed]\
 MD5: b960dc16d45fb0029173acc8246e441b\
 SHA256: 2b609263d0513751580ce2c86dbe9446c9d7a7b589be8e43f7a04c604ca06855\
 A folder that contains all summary files from November 23rd 2022 to May 10th 2025\
+
+# networth grapher
+Graphs the combined networth of ships you own over a time period.\
+Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
+Make a file titled 'shiplist.json' and paste your shiplist into it.\
+Shiplist link: https://drednot.io/shiplist?server=0\
+Dependencies:
+shiplist.json, item_conversions.json, YYYY-MM-DD_ships.json.gz (leading zeros must be ommited).\
+
+# item conversions
+A json file that maps item ids to how many of that item will be worth 16 flux (npsf).\
+The npsf column will also contain 'inf' aka 0 value for starters, and 'no value' for certain rares.\
+Required to use the networth grapher.\
+
+# ships downloader
+Downloads all ships.json.gz files over a time period.\
+Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
+Can be configured to download any econ dumps file. To do this, edit the link on line 35.\
+
 \
 Have fun!\
