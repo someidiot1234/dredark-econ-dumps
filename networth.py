@@ -63,7 +63,7 @@ def netstoplottable(days, shiplist):
 
 def main():
     # EDIT THE DATES BELOW BEFORE RUNNING
-    #sys.exit(1)  # Remove < after you have confirmed lines 170 & 171
+    #sys.exit(1)  # Remove < after you have confirmed lines 67 & 68
     start_date = date(2022, 11, 23)
     end_date = date(2025, 7, 1)
     delta = timedelta(days=1)
