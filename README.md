@@ -71,5 +71,14 @@ Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
 Can be configured to download any econ dumps file. To do this, edit the link on line 34.\
 PLEASE specify the date range you would like to download on lines 29 & 30
 
+# shipsgz files (the folder)
+
+A folder that contains folders of all ships files from November 23rd 2022 to Jul. 1st 2025.\
+Seperated by Quarter and Year.\
+Q1: Jan. 1st to Mar. 31st\
+Q2: May 1st to Jun. 30th\
+Q3: Jul. 1st to Sep. 30th\
+Q4: Oct. 1st to Dec. 31st
+
 \
 Have fun!\
