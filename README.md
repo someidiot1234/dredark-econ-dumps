@@ -47,6 +47,8 @@ SHA256: 2b609263d0513751580ce2c86dbe9446c9d7a7b589be8e43f7a04c604ca06855\
 A folder that contains all summary files from November 23rd 2022 to May 10th 2025\
 
 # networth grapher
+MD5: f637ead275de9569675488496abae23f
+SHA256: b24f285331e5a0cc127bab1f5e84814a2541ffb2bcb07daf952f1d13923246b8
 Graphs the combined networth of ships you own over a time period.\
 Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
 Make a file titled 'shiplist.json' and paste your shiplist into it.\
@@ -55,11 +57,15 @@ Dependencies:
 shiplist.json, item_conversions.json, YYYY-MM-DD_ships.json.gz (leading zeros must be ommited).\
 
 # item conversions
+MD5: c42e53ce012d482412e04f588009b378
+SHA256: 1f464330aeb7a0ff1acdbc7f34fca149990130d3467ede87a0082ed861290a69
 A json file that maps item ids to how many of that item will be worth 16 flux (npsf).\
 The npsf column will also contain 'inf' aka 0 value for starters, and 'no value' for certain rares.\
 Required to use the networth grapher.\
 
 # ships downloader
+MD5: 81829b888f4521106b0a6c1e3a0aa83c
+SHA256: 9d3f1863b361d44b9abd2d19e5b0178ab58aa833549f111601013e568d7ef14c
 Downloads all ships.json.gz files over a time period.\
 Defaults Nov. 23, 2022 to Jul. 1st, 2025.\
 Can be configured to download any econ dumps file. To do this, edit the link on line 35.\
