@@ -25,8 +25,7 @@ def getsize(path):
 def main():
     failed_links = ""
     # EDIT THE DATES BELOW BEFORE RUNNING
-    #sys.exit(1)  # Remove < after you have confirmed lines 170 & 171
-    #start_date = date(2023, 4, 30)
+    #sys.exit(1)  # Remove < after you have confirmed lines 29 & 30
     start_date = date(2022, 11, 23)
     end_date = date(2025, 7, 1)
     delta = timedelta(days=1)
