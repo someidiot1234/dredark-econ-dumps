@@ -72,7 +72,7 @@ Can be configured to download any econ dumps file. To do this, edit the link on 
 PLEASE specify the date range you would like to download on lines 29 & 30
 
 # shipsgz files (the folder)
-
+ignore this pls\
 A folder that contains folders of all ships files from November 23rd 2022 to Jul. 1st 2025.\
 Seperated by Quarter and Year.\
 Q1: Jan. 1st to Mar. 31st\
